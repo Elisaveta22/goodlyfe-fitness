@@ -11,25 +11,46 @@
     <meta name="title" content="Goodlyfe" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./src/scss/main.scss" />
+    <link rel="stylesheet" href="./src/scss/index.scss" />
   </head>
   <body>
-    <header>
-      <h1>Good<span>Lyfe</span></h1>
-      <nav>
-        <menu>
-          <li><a href="">Classes</a></li>
-          <li><a href="">Timetable</a></li>
-          <li><a href="">Clubs</a></li>
-          <li><a href="">Nutrition</a></li>
-          <li><a href="">Free trial</a></li>
-        </menu>
-      </nav>
-      <div>
-        <input href="" placeholder="Search" />
-        <input type="image" src="/src/assets/icons/search-icon.svg" alt="Search" />
+    <header class="main-header">
+      <h1 class="main-logo">Good<span class="main-logo-highlight">Lyfe</span></h1>
+
+      <div class="header-controls">
+        <nav class="navbar">
+          <menu class="navbar-menu">
+            <li class="navbar-item"><a href="" class="navbar-item-link">Classes</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Timetable</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Clubs</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Nutrition</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Free trial</a></li>
+          </menu>
+        </nav>
+        <div class="search-container">
+          <input href="" placeholder="Search" class="search-input" />
+          <input type="image" src="/src/assets/icons/search-icon.svg" alt="Search" class="search-btn" />
+        </div>
+        <button class="login-btn">Login</button>
+        <button class="burger-menu">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="burger-menu-icon"
+            aria-labelledby="burgerMenuIconID"
+            role="img"
+          >
+            <title id="burgerMenuIconID">Open navigation menu</title>
+            <path
+              d="M3 7a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1ZM3 14a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1ZM4 20a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2H4Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
       </div>
-      <button>Login</button>
     </header>
 
     <main>

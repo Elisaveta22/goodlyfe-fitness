@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+$gray-one: #252525;
+$gray-two: #424242;
+$gray-three: #858585;
+$gray-four: #d2d2d2;
+$gray-five: #ededed;
+$white: #ffffff;
+$pink-one: #e43071;
+$pink-two: #ffc1d8;
+$font: 'Poppins', sans-serif;
+
+@mixin heading1 {
+  font-family: $font;
+  font-weight: 800;
+  font-size: 4.375rem;
+  font-style: normal;
+  line-height: 110%; /* 4.8125rem */
+}
+
+@mixin heading2 {
+  font-family: $font;
+  font-weight: 800;
+  font-size: 3.75rem;
+  font-style: normal;
+  line-height: 110%; /* 4.125rem */
+}
+
+@mixin heading3 {
+  font-family: $font;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 3.3rem */
+}
+
+@mixin heading4 {
+  font-family: $font;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 2.75rem */
+}
+
+@mixin heading5 {
+  font-family: $font;
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 2.6125rem */
+}
+
+@mixin subtitle {
+  font-family: $font;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.3125rem; /* 205.556% */
+}
+
+@mixin body {
+  font-family: $font;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin hyperlink {
+  font-family: $font;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.3125rem; /* 231.25% */
+}
