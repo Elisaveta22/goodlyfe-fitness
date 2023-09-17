@@ -1,0 +1,124 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.welcome-banner {
+  height: 691px + 14px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include lg {
+    height: 500px;
+  }
+
+  @include md {
+    height: 389px + 25px;
+  }
+
+  .img-slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+
+    .img-slider-item {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .img-slider-header {
+    position: absolute;
+    top: 241px;
+    bottom: 278px;
+    text-align: center;
+    color: $white;
+
+    @include heading1;
+
+    @include lg {
+      top: 150px;
+      font-size: 3rem;
+    }
+
+    @include md {
+      top: 103px;
+      font-size: 2rem;
+    }
+
+    .logo-highlight {
+      color: $pink-two;
+    }
+  }
+
+  .slider-btn-container {
+    position: absolute;
+    bottom: 29px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 9px;
+
+    @include md {
+      margin-bottom: 0px;
+    }
+
+    .slider-btn {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $white;
+      border: none;
+    }
+
+    .slider-btn-selected {
+      cursor: pointer;
+      height: 17px;
+      width: 17px;
+      background-color: $pink-one;
+    }
+  }
+
+  .img-slider-btn {
+    margin: auto;
+    position: absolute;
+    bottom: 202px;
+    background-color: $pink-one;
+    color: $white;
+
+    @include lg {
+      bottom: 150px;
+    }
+
+    @include md {
+      bottom: 166px;
+    }
+  }
+
+  .wave-path {
+    margin-bottom: -1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.new-body {
+  height: 1000px;
+  background-color: white;
+  padding: 100px;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}

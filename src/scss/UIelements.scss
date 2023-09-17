@@ -1,0 +1,19 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.btn {
+  padding: 16px 56px;
+  border-radius: 38.5px;
+  border: 2px solid $pink-one;
+  text-decoration: none;
+
+  @include hyperlink;
+
+  @include md {
+    padding: 10px 41px;
+  }
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
