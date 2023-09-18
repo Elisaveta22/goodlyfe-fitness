@@ -2,6 +2,8 @@ $screen-xlg-max: 1320px;
 
 $screen-lg-max: 1100px;
 
+$screen-max-800: 800px;
+
 $screen-md-max: 600px;
 
 $screen-sm-max: 360px;
@@ -14,6 +16,12 @@ $screen-sm-max: 360px;
 
 @mixin lg {
   @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin md2 {
+  @media (max-width: #{$screen-max-800}) {
     @content;
   }
 }
