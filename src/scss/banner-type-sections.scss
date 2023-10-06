@@ -1,0 +1,97 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.welcome-banner {
+  height: 691px + 14px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include lg {
+    height: 500px;
+  }
+
+  @include md {
+    height: 389px + 25px;
+  }
+
+  .slider-text-container {
+    padding: 241px 50px 200px;
+    gap: 30px;
+
+    @include lg {
+      padding: 150px 20px 130px;
+    }
+
+    @include md {
+      gap: 20px;
+      padding: 113px 17px 150px;
+    }
+  }
+
+  .img-slider-header {
+    .logo-highlight {
+      color: $pink-two;
+    }
+  }
+
+  .wave-path {
+    margin-bottom: -1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.become-more-section {
+  height: 700px;
+
+  @include lg {
+    height: 500px;
+  }
+
+  @include md {
+    height: 443px;
+  }
+
+  .img-slider-item {
+    object-position: 100% 60%;
+
+    @include lg {
+      object-position: 100% 70%;
+    }
+    @include md {
+      object-position: 100% 90%;
+    }
+  }
+
+  .slider-text-container {
+    padding: 231px 50px 247px;
+    gap: 20px;
+
+    @include lg {
+      padding: 150px 20px 130px;
+    }
+
+    @include md {
+      padding: 75px 17px 82px;
+    }
+
+    .img-slider-header {
+      @include md {
+        @include heading4;
+      }
+    }
+
+    .img-slider-p {
+      max-width: 433px;
+      text-align: center;
+      line-height: normal;
+      color: $white;
+
+      @include body;
+    }
+  }
+}

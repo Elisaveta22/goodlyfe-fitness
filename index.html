@@ -11,92 +11,130 @@
     <meta name="title" content="Goodlyfe" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./src/scss/main.scss" />
+    <link rel="stylesheet" href="./src/scss/index.scss" />
   </head>
   <body>
-    <header>
-      <h1>Good<span>Lyfe</span></h1>
-      <nav>
-        <menu>
-          <li><a href="">Classes</a></li>
-          <li><a href="">Timetable</a></li>
-          <li><a href="">Clubs</a></li>
-          <li><a href="">Nutrition</a></li>
-          <li><a href="">Free trial</a></li>
-        </menu>
-      </nav>
-      <div>
-        <input href="" placeholder="Search" />
-        <input type="image" src="/src/assets/icons/search-icon.svg" alt="Search" />
+    <header class="main-header">
+      <h1 class="main-logo">Good<span class="main-logo-highlight">Lyfe</span></h1>
+
+      <div class="header-controls">
+        <nav class="navbar">
+          <menu class="navbar-menu">
+            <li class="navbar-item"><a href="" class="navbar-item-link">Classes</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Timetable</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Clubs</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Nutrition</a></li>
+            <li class="navbar-item"><a href="" class="navbar-item-link">Free trial</a></li>
+          </menu>
+        </nav>
+        <div class="search-container">
+          <input href="" placeholder="Search" class="search-input" />
+          <input type="image" src="/src/assets/icons/search-icon.svg" alt="Search" class="search-btn" />
+        </div>
+        <button class="login-btn">Login</button>
+        <button class="burger-menu">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="burger-menu-icon"
+            aria-labelledby="burgerMenuIconID"
+            role="img"
+          >
+            <title id="burgerMenuIconID">Open navigation menu</title>
+            <path
+              d="M3 7a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1ZM3 14a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1ZM4 20a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2H4Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
       </div>
-      <button>Login</button>
     </header>
 
     <main>
-      <section class="welcome-banner">
-        <div>
+      <section class="banner welcome-banner">
+        <div class="img-slider-container">
           <img
             src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1982&q=80"
             alt="image of a woman doing an exercise with a dumbbell in the gym"
+            class="img-slider-item"
           />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
-          <div>
-            <input type="button" value="" alt="Go to image 1" />
-            <input type="button" value="" alt="Go to image 2" />
-            <input type="button" value="" alt="Go to image 3" />
-            <input type="button" value="" alt="Go to image 4" />
-            <input type="button" value="" alt="Go to image 5" />
-          </div>
         </div>
-        <h1>Welcome to Goodlyfe Gyms</h1>
-        <a href="">See the benifits</a>
+        <div class="slider-btn-container">
+          <input type="button" value="" alt="Go to image 1" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 2" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 3" class="slider-btn slider-btn-selected" />
+          <input type="button" value="" alt="Go to image 4" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 5" class="slider-btn" />
+        </div>
+        <div class="slider-text-container">
+          <h1 class="img-slider-header">
+            Welcome to <br />
+            Good<span class="logo-highlight">Lyfe</span> Gyms
+          </h1>
+          <a href="" class="btn img-slider-btn">See the benefits</a>
+        </div>
+        <img src="/src/assets/icons/wave-path-icon.svg" alt="" class="wave-path" />
       </section>
 
-      <section class="new-body">
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="image of a man doing a deadlift in the gym"
-          />
+      <section class="new-body-section">
+        <div class="new-body-container">
+          <div class="body-img-wrapper">
+            <div class="body-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="image of a man doing a deadlift in the gym"
+                class="body-img-top"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="image of a woman doing abs exercise in the gym"
+                class="body-img-bottom"
+              />
+            </div>
+          </div>
+
+          <div class="new-body-text-container">
+            <h2 class="new-body-heading">Meet your new body</h2>
+            <p class="new-body-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor,
+              bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+            </p>
+            <a href="" class="new-body-btn btn">View the FAQ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner become-more-section">
+        <div class="img-slider-container">
           <img
             src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
             alt="image of a woman doing abs exercise in the gym"
-          />
-        </div>
-        <div>
-          <h2>Meet your new body</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor,
-            bibendum in molestie sed, gravclassa nec felis. Sed class egestasegestas risus, ut imperdiet augue.
-          </p>
-          <a href="">View the FAQ</a>
-        </div>
-      </section>
-
-      <section class="become-more">
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-            alt="image of a woman doing abs exercise in the gym"
+            class="img-slider-item"
           />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
-          <div>
-            <input type="button" value="" alt="Go to image 1" />
-            <input type="button" value="" alt="Go to image 2" />
-            <input type="button" value="" alt="Go to image 3" />
-            <input type="button" value="" alt="Go to image 4" />
-            <input type="button" value="" alt="Go to image 5" />
-          </div>
         </div>
-        <h2>Become more than you are.</h2>
-        <p>Staying active is great fun and keeps you healthy. Check out how you can join in.</p>
-        <a href="">Let's do it!</a>
+        <div class="slider-btn-container">
+          <input type="button" value="" alt="Go to image 1" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 2" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 3" class="slider-btn slider-btn-selected" />
+          <input type="button" value="" alt="Go to image 4" class="slider-btn" />
+          <input type="button" value="" alt="Go to image 5" class="slider-btn" />
+        </div>
+        <div class="slider-text-container">
+          <h2 class="img-slider-header">Become more than you are.</h2>
+          <p class="img-slider-p">Staying active is great fun and keeps you healthy. Check out how you can join in.</p>
+          <a href="" class="btn img-slider-btn">Let's do it!</a>
+        </div>
       </section>
 
       <section class="facilities">

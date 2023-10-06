@@ -1,0 +1,108 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.btn {
+  padding: 16px;
+  border-radius: 38.5px;
+  border: 2px solid $pink-one;
+  text-decoration: none;
+
+  @include hyperlink;
+
+  @include md {
+    padding: 10px 41px;
+  }
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.banner {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+
+    .img-slider-item {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .img-slider-header {
+    text-align: center;
+    color: $white;
+
+    @include heading1;
+
+    @include lg {
+      font-size: 3rem;
+    }
+
+    @include md {
+      font-size: 2rem;
+    }
+  }
+
+  .slider-btn-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    bottom: 26px;
+
+    @include md {
+      bottom: 25px;
+    }
+
+    .slider-btn {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $white;
+      border: none;
+    }
+
+    .slider-btn-selected {
+      cursor: pointer;
+      height: 17px;
+      width: 17px;
+      background-color: $pink-one;
+    }
+  }
+
+  .slider-text-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .img-slider-btn {
+    box-sizing: border-box;
+    text-align: center;
+    padding: auto;
+    min-width: 237px;
+    background-color: $pink-one;
+    color: $white;
+  }
+}

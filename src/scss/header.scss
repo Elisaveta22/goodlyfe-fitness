@@ -1,0 +1,147 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.main-header {
+  background-color: $pink-one;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 26px 36px;
+
+  @include lg {
+    padding: 26px;
+  }
+
+  @include lg {
+    padding: 16px;
+  }
+
+  .main-logo {
+    @include heading4;
+    margin-right: 50px;
+
+    @include xlg {
+      margin-right: 35px;
+    }
+
+    @include lg {
+      font-size: 1.36363rem;
+    }
+
+    .main-logo-highlight {
+      color: $pink-two;
+    }
+  }
+
+  .login-btn {
+    padding: 16px 62px;
+    border-radius: 12.5rem;
+    border: none;
+    color: $pink-one;
+    background-color: $white;
+    cursor: pointer;
+
+    @include body;
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    background-color: $pink-one;
+
+    @include lg {
+      display: block;
+    }
+
+    .burger-menu-icon {
+      color: $white;
+    }
+
+    .burger-menu-icon:hover {
+      color: $gray-two;
+    }
+  }
+}
+
+.navbar {
+  @include lg {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 76px;
+    width: 100%;
+
+    @include xlg {
+      gap: 35px;
+    }
+
+    .navbar-item {
+      list-style: none;
+
+      .navbar-item-link {
+        text-decoration: none;
+        color: $white;
+
+        @include body;
+      }
+    }
+  }
+}
+
+.header-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+
+  .search-container {
+    margin-left: 76px;
+    margin-right: 38px;
+    display: flex;
+    gap: 6px;
+
+    @include xlg {
+      margin-left: 35px;
+    }
+
+    @include lg {
+      margin-right: 25px;
+    }
+
+    .search-input {
+      background-color: $pink-one;
+      border: none;
+      color: $white;
+      width: 60px;
+
+      @include body;
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    .search-input::placeholder {
+      color: $white;
+      opacity: 1;
+    }
+
+    .search-btn {
+      cursor: pointer;
+
+      @include lg {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+}
