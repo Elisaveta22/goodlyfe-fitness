@@ -1,0 +1,129 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.footer {
+  background-color: $default-black;
+  padding: 96px 165px 24px;
+
+  .footer-top-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-top-column {
+      max-width: 255px;
+      width: 100%;
+    }
+
+    .footer-heading {
+      @include heading6;
+
+      color: $white;
+      margin-bottom: 24px;
+    }
+
+    .footer-nav-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 12px;
+
+      .footer-nav-list-item {
+        list-style: none;
+        .footer-nav-link {
+          @include body2;
+
+          color: $text-gray-300;
+          text-decoration: none;
+        }
+
+        .footer-nav-link:hover {
+          color: $pink-one;
+        }
+      }
+    }
+  }
+
+  .footer-address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    .footer-address-link {
+      line-height: 17px !important;
+      max-width: 130px;
+    }
+  }
+}
+
+.footer-top {
+  margin-bottom: 103px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 255px;
+
+  .footer-main-logo {
+    font-family: Poppins;
+    font-size: 1.60425rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 109.5%;
+    color: $white;
+
+    .footer-main-logo-highlight {
+      color: $pink-one;
+    }
+  }
+
+  .footer-about-p {
+    @include body2;
+    color: $text-gray-300;
+  }
+
+  .footer-about-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+.footer-bottom {
+  @include body2;
+
+  color: $text-gray-300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-terms {
+    font-style: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    .footer-terms-item {
+      list-style: none;
+
+      .footer-terms-item-link {
+        text-decoration: none;
+        @include body2;
+
+        color: $text-gray-300;
+      }
+    }
+  }
+}

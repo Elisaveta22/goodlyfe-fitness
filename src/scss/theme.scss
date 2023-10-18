@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
 
+$default-black: #0b0d17;
+$text-gray-300: #d9dbe1;
 $gray-one: #252525;
 $gray-two: #424242;
 $gray-three: #858585;
@@ -50,6 +53,14 @@ $font: 'Poppins', sans-serif;
   line-height: 110%; /* 2.6125rem */
 }
 
+@mixin heading6 {
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
 @mixin subtitle {
   font-family: $font;
   font-size: 1.125rem;
@@ -63,6 +74,14 @@ $font: 'Poppins', sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+}
+
+@mixin body2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @mixin hyperlink {
