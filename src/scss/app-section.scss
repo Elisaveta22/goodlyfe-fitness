@@ -1,0 +1,68 @@
+@import '/src/scss/theme.scss';
+@import '/src/scss/breakpoints.scss';
+
+.app-section {
+  background-color: $pink-one;
+  padding: 112px 238px 53px;
+  position: relative;
+
+  @include xlg {
+    padding: 112px 150px 53px;
+  }
+
+  @include lg {
+    padding: 112px 70px 53px;
+  }
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+
+    .app-header {
+      @include heading4;
+
+      color: $white;
+    }
+
+    .app-p {
+      @include body;
+
+      color: $white;
+      line-height: 37px;
+      max-width: 489px;
+    }
+
+    .app-download-now-text {
+      @include body;
+
+      color: rgba(255, 255, 255, 0.6);
+      line-height: normal;
+    }
+  }
+
+  .app-img-outer-container {
+    position: absolute;
+    top: -41px;
+    left: 797px;
+    overflow: hidden;
+
+    @include xlg {
+      left: 650px;
+    }
+
+    @include lg {
+      left: 550px;
+    }
+
+    .app-img-inner-container {
+      display: flex;
+      flex-wrap: nowrap;
+      //margin-bottom: 100px;
+    }
+
+    .app-img-bottom {
+      margin-bottom: -100px;
+    }
+  }
+}
